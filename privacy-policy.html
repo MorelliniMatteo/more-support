@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Generato da Scripts/legal/generate.py: modificare Scripts/legal/content.json. -->
 <html lang="it">
 <head>
 <meta charset="utf-8">
@@ -12,110 +13,301 @@
     color: #1c1c1e; background: #fff;
   }
   @media (prefers-color-scheme: dark) { body { color: #f2f2f7; background: #1c1c1e; } }
+  nav { font-size: .95rem; margin-bottom: 2.5em; }
+  nav p { margin: 0 0 .4em; display: flex; flex-wrap: wrap; gap: .3em 1.1em; }
+  .lead a, p a { overflow-wrap: anywhere; }
   h1 { font-size: 2rem; margin-bottom: .25em; }
-  h2 { font-size: 1.25rem; margin-top: 2.5em; }
+  h2 { font-size: 1.2rem; margin-top: 2.2em; }
   .updated { color: #8e8e93; font-size: .95rem; margin-top: 0; }
   .lead { font-size: 1.1rem; }
   ul { padding-left: 1.25em; }
   li { margin-bottom: .4em; }
-  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
   hr { border: none; border-top: 1px solid rgba(127,127,127,.3); margin: 4em 0; }
   a { color: #c0552d; }
 </style>
 </head>
 <body>
 
-<h1>Informativa sulla privacy</h1>
-<p class="updated">More per iPhone — ultimo aggiornamento: 11 settembre 2026</p>
+<nav><p><a href="index.html"><strong>More</strong></a> <a href="terms.html">Termini di utilizzo</a> <a href="support.html">Supporto</a></p>
+<p><a href="#it">Italiano</a> <a href="#en">English</a> <a href="#es">Español</a> <a href="#fr">Français</a></p></nav>
 
-<p class="lead">More non raccoglie i tuoi dati. Non c'è un account da creare, non c'è un server a cui i tuoi dati vengono inviati, e lo sviluppatore non può vederli.</p>
+<section id="it" lang="it">
+<h1>Informativa sulla privacy</h1>
+<p class="updated">More — Ultimo aggiornamento: 13 ottobre 2026</p>
+
+<p class="lead">More è pensata per non raccogliere i tuoi dati: non c'è un account, non c'è un server dello sviluppatore, non ci sono pubblicità né tracciamento. Qui trovi cosa succede alle informazioni che inserisci e i pochi casi in cui qualcosa lascia il tuo iPhone.</p>
+
+<h2>Chi è il titolare</h2>
+<p>More è sviluppata da Matteo Morellini, sviluppatore indipendente con sede in Italia, che è il titolare del trattamento per i pochi dati descritti qui sotto. Per qualsiasi domanda: <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>.</p>
 
 <h2>Dove vivono i tuoi dati</h2>
-<p>Gli abbonamenti, le bollette, i documenti, gli importi e le note che inserisci sono salvati <strong>sul tuo iPhone</strong>. Restano lì.</p>
-<p>Se attivi la sincronizzazione iCloud, gli stessi dati vengono copiati nel <strong>tuo database iCloud privato</strong>, in modo che siano disponibili sui tuoi dispositivi. Quel database appartiene al tuo Apple Account: è Apple a gestirlo, e lo sviluppatore di More non vi ha alcun accesso. La sincronizzazione può essere disattivata in qualsiasi momento dalle impostazioni dell'app; disattivarla non cancella nulla di ciò che è già sul dispositivo.</p>
+<p>Abbonamenti, bollette, documenti, importi, note, categorie e impostazioni sono salvati <strong>sul tuo dispositivo</strong>. Una parte è condivisa, sempre sul dispositivo, con i widget e con l'estensione di condivisione di More.</p>
+<p>Se attivi la sincronizzazione iCloud, gli stessi dati vengono copiati nel <strong>tuo database iCloud privato</strong>, per averli su tutti i tuoi dispositivi. Quel database appartiene al tuo Apple Account ed è gestito da Apple secondo la sua informativa: lo sviluppatore di More non vi ha alcun accesso. Puoi disattivare la sincronizzazione in qualsiasi momento.</p>
 
 <h2>Cosa non facciamo</h2>
 <ul>
-  <li>Nessun account, nessuna registrazione, nessuna email richiesta.</li>
+  <li>Nessun account, nessuna registrazione, nessun indirizzo email richiesto.</li>
   <li>Nessuno strumento di analisi, telemetria o statistica d'uso.</li>
-  <li>Nessun tracciamento pubblicitario, nessun identificatore di dispositivo trasmesso.</li>
-  <li>Nessun componente di terze parti: l'app non integra alcun SDK esterno.</li>
+  <li>Nessuna pubblicità, nessun tracciamento, nessun identificatore pubblicitario.</li>
+  <li>Nessun SDK o servizio di terze parti integrato nell'app.</li>
   <li>I tuoi dati non vengono venduti, ceduti o condivisi con nessuno.</li>
 </ul>
 
-<h2>L'unica connessione a internet</h2>
-<p>Se usi più di una valuta, More scarica i tassi di cambio di riferimento della Banca Centrale Europea tramite il servizio pubblico <a href="https://frankfurter.app">frankfurter.app</a>.</p>
-<p>Quella richiesta contiene <strong>soltanto i codici delle valute</strong> (per esempio <code>from=EUR&amp;to=USD,GBP</code>). Non contiene i tuoi importi, i nomi dei tuoi abbonamenti, né alcun identificatore che ti riguardi. Se usi una sola valuta, More non effettua alcuna chiamata di rete.</p>
+<h2>Testi, screenshot e documenti</h2>
+<p>Quando importi da un testo, da uno screenshot o da un documento scansionato, la lettura avviene <strong>interamente sul dispositivo</strong>: il testo viene riconosciuto con le funzioni di sistema di iOS e, dove disponibile, interpretato con il modello Apple Intelligence che gira sull'iPhone. Immagini e testi non vengono inviati a nessun server, né allo sviluppatore né ad altri.</p>
+<p>Il contenuto che condividi con More da un'altra app resta sul dispositivo finché non lo importi o lo elimini.</p>
 
-<h2>Permessi che l'app può chiederti</h2>
+<h2>Le connessioni a internet</h2>
+<p>Se usi più di una valuta, More scarica i tassi di cambio di riferimento della Banca Centrale Europea dal servizio pubblico <a href="https://frankfurter.app">frankfurter.app</a>. La richiesta contiene <strong>soltanto i codici delle valute</strong> (per esempio EUR e USD): nessun importo, nessun nome di abbonamento, nessun identificatore. Come ogni richiesta su internet, il servizio riceve l'indirizzo IP del dispositivo. Se usi una sola valuta, More non effettua chiamate di rete.</p>
+<p>I link che apri dall'app (per esempio la pagina di disdetta di un servizio o l'App Store) si aprono nel browser o nell'app corrispondente, e da lì valgono le regole di quei siti.</p>
+
+<h2>Notifiche, widget, Siri e Live Activity</h2>
+<p>Promemoria, riepiloghi, widget e Live Activity sono generati <strong>dal tuo iPhone</strong>, senza server intermedi. Se usi Siri o Comandi Rapidi, la richiesta vocale è gestita da Apple secondo le sue regole sulla privacy.</p>
+
+<h2>Permessi</h2>
 <ul>
-  <li><strong>Notifiche</strong> — per i promemoria delle scadenze. Sono notifiche locali, generate dal tuo iPhone: nessun server è coinvolto.</li>
-  <li><strong>Fotocamera</strong> — solo se usi lo scanner per bollette e documenti. L'immagine viene letta sul dispositivo e non viene mai caricata da nessuna parte.</li>
-  <li><strong>Foto</strong> — solo per le immagini che scegli tu, quando importi da uno screenshot o personalizzi l'icona di un abbonamento. Anche qui l'elaborazione avviene interamente sul dispositivo.</li>
+  <li><strong>Notifiche</strong>: per i promemoria. Sono notifiche locali.</li>
+  <li><strong>Fotocamera</strong>: solo se usi lo scanner di documenti. L'immagine viene letta sul dispositivo e non viene salvata né caricata.</li>
+  <li><strong>Foto</strong>: More vede solo le immagini che scegli tu, quando importi da uno screenshot o personalizzi l'icona di un abbonamento.</li>
 </ul>
-<p>Ognuno di questi permessi è facoltativo: negandolo, l'app continua a funzionare senza la relativa funzione.</p>
+<p>Ogni permesso è facoltativo: negandolo, l'app continua a funzionare senza la relativa funzione.</p>
 
 <h2>Acquisti</h2>
-<p>Gli eventuali acquisti all'interno dell'app sono gestiti da Apple. More non vede né riceve i dati della tua carta o del tuo metodo di pagamento.</p>
+<p>Gli acquisti di More Pro sono gestiti da Apple tramite l'App Store. More riceve da Apple solo la conferma di quale piano è attivo: non vede il tuo nome, la tua email né i dati della carta. Lo sviluppatore riceve da Apple soltanto report di vendita aggregati.</p>
+
+<h2>Se ci scrivi</h2>
+<p>Se contatti il supporto via email, riceviamo il tuo indirizzo email e ciò che scrivi. Il messaggio che More prepara include in fondo alcune informazioni tecniche (versione dell'app, versione di iOS, modello del dispositivo, piano e lingua): le vedi prima di inviare e puoi cancellarle.</p>
+<p>Usiamo questi dati <strong>solo per risponderti</strong> (base giuridica: la tua richiesta e il nostro legittimo interesse a darti assistenza). La posta è gestita con Gmail, quindi Google la tratta come fornitore del servizio email. Conserviamo le conversazioni per il tempo necessario all'assistenza e comunque non oltre 24 mesi.</p>
+
+<h2>Report sugli arresti anomali</h2>
+<p>Se nelle impostazioni di iOS hai scelto di condividere i dati di analisi con gli sviluppatori, Apple può inviare allo sviluppatore report anonimi sugli arresti anomali dell'app. Puoi cambiare questa scelta in Impostazioni › Privacy e sicurezza › Analisi e miglioramenti. Chi prova More con TestFlight può inoltre inviare feedback e screenshot tramite TestFlight.</p>
+
+<h2>Esportazioni e condivisioni</h2>
+<p>File che esporti (CSV, PDF, backup) e immagini che condividi (come lo scontrino del mese o il riepilogo dell'anno) vengono creati sul dispositivo e vanno solo dove scegli tu.</p>
 
 <h2>Minori</h2>
-<p>More non è destinata specificamente ai minori e non raccoglie consapevolmente dati di alcuna persona, minore o adulta.</p>
+<p>More non è rivolta ai minori di 14 anni e non raccoglie consapevolmente dati di nessuno, minore o adulto.</p>
 
-<h2>Cancellazione dei dati</h2>
-<p>Puoi eliminare qualsiasi elemento dall'app in qualunque momento. Disinstallando More, i dati salvati sul dispositivo vengono rimossi. I dati eventualmente presenti nel tuo iCloud privato si eliminano dalle impostazioni iCloud del tuo Apple Account.</p>
+<h2>I tuoi diritti</h2>
+<p>I dati dell'app restano sotto il tuo controllo: puoi modificarli, esportarli (Impostazioni › Dati e backup) ed eliminarli in qualsiasi momento, senza chiedere a nessuno.</p>
+<p>Per i dati di una conversazione con il supporto puoi chiedere accesso, rettifica, cancellazione, limitazione o opporti al trattamento scrivendo a <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>. Hai anche il diritto di presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>) o all'autorità del tuo Paese.</p>
 
-<h2>Modifiche a questa informativa</h2>
-<p>Se questa informativa cambierà, la data in cima verrà aggiornata e la versione aggiornata sarà pubblicata a questo stesso indirizzo.</p>
+<h2>Cancellare i dati</h2>
+<p>Puoi eliminare qualsiasi elemento dall'app. Disinstallando More, i dati salvati sul dispositivo vengono rimossi. I dati nel tuo iCloud privato si eliminano da Impostazioni › il tuo nome › iCloud › Gestisci spazio › More.</p>
 
-<h2>Contatti</h2>
-<p>Per qualsiasi domanda su questa informativa: <a href="mailto:matmoro02@gmail.com">matmoro02@gmail.com</a></p>
+<h2>Modifiche</h2>
+<p>Se questa informativa cambierà, aggiorneremo la data qui sopra e, per le modifiche importanti, lo segnaleremo nell'app.</p>
+</section>
 
 <hr>
 
-<h1 id="en">Privacy Policy</h1>
-<p class="updated">More for iPhone — last updated: 11 September 2026</p>
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="updated">More — Last updated: October 13, 2026</p>
 
-<p class="lead">More does not collect your data. There is no account to create, no server your data is sent to, and the developer cannot see it.</p>
+<p class="lead">More is designed not to collect your data: there is no account, no developer server, no ads and no tracking. This page explains what happens to the information you enter and the few cases in which something leaves your iPhone.</p>
+
+<h2>Who is responsible</h2>
+<p>More is developed by Matteo Morellini, an independent developer based in Italy, who is the data controller for the little data described below. For any question: <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>.</p>
 
 <h2>Where your data lives</h2>
-<p>The subscriptions, bills, documents, amounts and notes you enter are stored <strong>on your iPhone</strong>. They stay there.</p>
-<p>If you turn on iCloud sync, the same data is mirrored to <strong>your own private iCloud database</strong>, so it is available on your devices. That database belongs to your Apple Account and is managed by Apple; the developer of More has no access to it. Sync can be turned off at any time in the app's settings, and turning it off never deletes anything already on your device.</p>
+<p>Subscriptions, bills, documents, amounts, notes, categories and settings are stored <strong>on your device</strong>. Part of them is shared, still on the device, with More's widgets and share extension.</p>
+<p>If you turn on iCloud sync, the same data is copied to <strong>your private iCloud database</strong> so it's available on all your devices. That database belongs to your Apple Account and is managed by Apple under its own privacy policy: the developer of More has no access to it. You can turn sync off at any time.</p>
 
-<h2>What we do not do</h2>
+<h2>What we don&#x27;t do</h2>
 <ul>
-  <li>No account, no sign-up, no email required.</li>
-  <li>No analytics, telemetry or usage tracking of any kind.</li>
-  <li>No advertising trackers, no device identifiers transmitted.</li>
-  <li>No third-party components: the app integrates no external SDKs.</li>
-  <li>Your data is never sold, rented or shared with anyone.</li>
+  <li>No account, no sign-up, no email address required.</li>
+  <li>No analytics, telemetry or usage statistics.</li>
+  <li>No ads, no tracking, no advertising identifier.</li>
+  <li>No third-party SDKs or services built into the app.</li>
+  <li>Your data is never sold, transferred or shared with anyone.</li>
 </ul>
 
-<h2>The only internet connection</h2>
-<p>If you use more than one currency, More downloads European Central Bank reference exchange rates through the public service <a href="https://frankfurter.app">frankfurter.app</a>.</p>
-<p>That request contains <strong>only currency codes</strong> (for example <code>from=EUR&amp;to=USD,GBP</code>). It contains none of your amounts, none of your subscription names, and no identifier relating to you. If you use a single currency, More makes no network requests at all.</p>
+<h2>Text, screenshots and documents</h2>
+<p>When you import from text, a screenshot or a scanned document, reading happens <strong>entirely on the device</strong>: text is recognized with iOS system features and, where available, interpreted by the Apple Intelligence model running on the iPhone. Images and text are not sent to any server, neither to the developer nor to anyone else.</p>
+<p>Content you share to More from another app stays on the device until you import or delete it.</p>
 
-<h2>Permissions the app may request</h2>
+<h2>Internet connections</h2>
+<p>If you use more than one currency, More downloads European Central Bank reference exchange rates from the public service <a href="https://frankfurter.app">frankfurter.app</a>. The request contains <strong>only currency codes</strong> (for example EUR and USD): no amounts, no subscription names, no identifiers. Like any internet request, the service receives the device's IP address. If you use a single currency, More makes no network calls.</p>
+<p>Links you open from the app (such as a service's cancellation page or the App Store) open in your browser or the related app, where those sites' own rules apply.</p>
+
+<h2>Notifications, widgets, Siri and Live Activities</h2>
+<p>Reminders, summaries, widgets and Live Activities are generated <strong>by your iPhone</strong>, with no server in between. If you use Siri or Shortcuts, voice requests are handled by Apple under its privacy rules.</p>
+
+<h2>Permissions</h2>
 <ul>
-  <li><strong>Notifications</strong> — for deadline reminders. These are local notifications generated by your iPhone; no server is involved.</li>
-  <li><strong>Camera</strong> — only if you use the bill and document scanner. The image is read on the device and is never uploaded anywhere.</li>
-  <li><strong>Photos</strong> — only for images you pick yourself, when importing from a screenshot or customising a subscription icon. Processing happens entirely on the device.</li>
+  <li><strong>Notifications</strong>: for reminders. They are local notifications.</li>
+  <li><strong>Camera</strong>: only if you use the document scanner. The image is read on the device and is neither saved nor uploaded.</li>
+  <li><strong>Photos</strong>: More only sees the images you pick, when you import from a screenshot or customize a subscription's icon.</li>
 </ul>
-<p>Each of these permissions is optional: if you decline, the app keeps working without that feature.</p>
+<p>Every permission is optional: if you decline, the app keeps working without that feature.</p>
 
 <h2>Purchases</h2>
-<p>Any in-app purchases are handled by Apple. More never sees or receives your card or payment details.</p>
+<p>More Pro purchases are handled by Apple through the App Store. More only receives confirmation from Apple of which plan is active: it never sees your name, email or card details. The developer only receives aggregated sales reports from Apple.</p>
+
+<h2>If you write to us</h2>
+<p>If you contact support by email, we receive your email address and what you write. The message More prepares includes some technical information at the bottom (app version, iOS version, device model, plan and language): you can see it before sending and delete it.</p>
+<p>We use this data <strong>only to reply to you</strong> (legal basis: your request and our legitimate interest in helping you). Mail is handled with Gmail, so Google processes it as our email provider. We keep conversations for as long as needed for support and no longer than 24 months.</p>
+
+<h2>Crash reports</h2>
+<p>If in the iOS settings you chose to share analytics with app developers, Apple may send the developer anonymous crash reports for the app. You can change this in Settings › Privacy &amp; Security › Analytics &amp; Improvements. People testing More through TestFlight can also send feedback and screenshots via TestFlight.</p>
+
+<h2>Exports and sharing</h2>
+<p>Files you export (CSV, PDF, backup) and images you share (such as the monthly receipt or the year recap) are created on the device and go only where you choose.</p>
 
 <h2>Children</h2>
-<p>More is not directed at children and does not knowingly collect data from anyone, child or adult.</p>
+<p>More is not directed at children under 14 and does not knowingly collect data from anyone, child or adult.</p>
+
+<h2>Your rights</h2>
+<p>The app's data stays under your control: you can edit it, export it (Settings › Data and backup) and delete it at any time, without asking anyone.</p>
+<p>For the data of a support conversation you can request access, correction, deletion or restriction, or object to processing, by writing to <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>. You also have the right to lodge a complaint with the Italian Data Protection Authority (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>) or the authority of your country.</p>
 
 <h2>Deleting your data</h2>
-<p>You can delete any item in the app at any time. Uninstalling More removes the data stored on the device. Any data in your private iCloud can be removed from your Apple Account's iCloud settings.</p>
+<p>You can delete any item in the app. Uninstalling More removes the data stored on the device. Data in your private iCloud is deleted from Settings › your name › iCloud › Manage Storage › More.</p>
 
-<h2>Changes to this policy</h2>
-<p>If this policy changes, the date at the top will be updated and the new version will be published at this same address.</p>
+<h2>Changes</h2>
+<p>If this policy changes, we'll update the date above and, for significant changes, let you know in the app.</p>
+</section>
 
-<h2>Contact</h2>
-<p>For any question about this policy: <a href="mailto:matmoro02@gmail.com">matmoro02@gmail.com</a></p>
+<hr>
+
+<section id="es" lang="es">
+<h1>Política de privacidad</h1>
+<p class="updated">More — Última actualización: 13 de octubre de 2026</p>
+
+<p class="lead">More está pensada para no recopilar tus datos: no hay cuenta, no hay servidor del desarrollador, no hay publicidad ni seguimiento. Aquí explicamos qué ocurre con la información que introduces y los pocos casos en los que algo sale de tu iPhone.</p>
+
+<h2>Quién es el responsable</h2>
+<p>More la desarrolla Matteo Morellini, desarrollador independiente con sede en Italia, responsable del tratamiento de los pocos datos descritos a continuación. Para cualquier pregunta: <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>.</p>
+
+<h2>Dónde están tus datos</h2>
+<p>Suscripciones, facturas, documentos, importes, notas, categorías y ajustes se guardan <strong>en tu dispositivo</strong>. Una parte se comparte, siempre dentro del dispositivo, con los widgets y la extensión para compartir de More.</p>
+<p>Si activas la sincronización con iCloud, esos mismos datos se copian en <strong>tu base de datos privada de iCloud</strong> para tenerlos en todos tus dispositivos. Esa base de datos pertenece a tu Cuenta de Apple y Apple la gestiona según su propia política: el desarrollador de More no tiene ningún acceso. Puedes desactivar la sincronización en cualquier momento.</p>
+
+<h2>Lo que no hacemos</h2>
+<ul>
+  <li>Ninguna cuenta, ningún registro, ningún correo electrónico requerido.</li>
+  <li>Ninguna herramienta de análisis, telemetría o estadísticas de uso.</li>
+  <li>Ninguna publicidad, ningún seguimiento, ningún identificador publicitario.</li>
+  <li>Ningún SDK ni servicio de terceros integrado en la app.</li>
+  <li>Tus datos nunca se venden, ceden ni comparten con nadie.</li>
+</ul>
+
+<h2>Textos, capturas y documentos</h2>
+<p>Cuando importas desde un texto, una captura o un documento escaneado, la lectura se hace <strong>por completo en el dispositivo</strong>: el texto se reconoce con funciones del sistema de iOS y, cuando está disponible, lo interpreta el modelo de Apple Intelligence que funciona en el iPhone. Las imágenes y los textos no se envían a ningún servidor, ni al desarrollador ni a nadie más.</p>
+<p>El contenido que compartes con More desde otra app se queda en el dispositivo hasta que lo importas o lo eliminas.</p>
+
+<h2>Conexiones a internet</h2>
+<p>Si usas más de una moneda, More descarga los tipos de cambio de referencia del Banco Central Europeo desde el servicio público <a href="https://frankfurter.app">frankfurter.app</a>. La solicitud contiene <strong>solo los códigos de las monedas</strong> (por ejemplo EUR y USD): ningún importe, ningún nombre de suscripción, ningún identificador. Como cualquier solicitud en internet, el servicio recibe la dirección IP del dispositivo. Si usas una sola moneda, More no realiza conexiones de red.</p>
+<p>Los enlaces que abres desde la app (por ejemplo la página de cancelación de un servicio o el App Store) se abren en el navegador o en la app correspondiente, y allí se aplican las normas de esos sitios.</p>
+
+<h2>Notificaciones, widgets, Siri y Actividades en Vivo</h2>
+<p>Recordatorios, resúmenes, widgets y Actividades en Vivo los genera <strong>tu iPhone</strong>, sin servidores intermedios. Si usas Siri o Atajos, Apple gestiona la solicitud de voz según sus normas de privacidad.</p>
+
+<h2>Permisos</h2>
+<ul>
+  <li><strong>Notificaciones</strong>: para los recordatorios. Son notificaciones locales.</li>
+  <li><strong>Cámara</strong>: solo si usas el escáner de documentos. La imagen se lee en el dispositivo y no se guarda ni se sube.</li>
+  <li><strong>Fotos</strong>: More solo ve las imágenes que eliges, cuando importas desde una captura o personalizas el icono de una suscripción.</li>
+</ul>
+<p>Todos los permisos son opcionales: si los deniegas, la app sigue funcionando sin esa función.</p>
+
+<h2>Compras</h2>
+<p>Las compras de More Pro las gestiona Apple a través del App Store. More solo recibe de Apple la confirmación del plan activo: nunca ve tu nombre, tu correo ni los datos de tu tarjeta. El desarrollador solo recibe de Apple informes de ventas agregados.</p>
+
+<h2>Si nos escribes</h2>
+<p>Si contactas con el soporte por correo, recibimos tu dirección de correo y lo que escribes. El mensaje que prepara More incluye al final algunos datos técnicos (versión de la app, versión de iOS, modelo del dispositivo, plan e idioma): los ves antes de enviar y puedes borrarlos.</p>
+<p>Usamos estos datos <strong>solo para responderte</strong> (base jurídica: tu solicitud y nuestro interés legítimo en ayudarte). El correo se gestiona con Gmail, por lo que Google lo trata como proveedor del servicio de correo. Conservamos las conversaciones el tiempo necesario para el soporte y nunca más de 24 meses.</p>
+
+<h2>Informes de fallos</h2>
+<p>Si en los ajustes de iOS elegiste compartir datos de análisis con los desarrolladores, Apple puede enviar al desarrollador informes anónimos de fallos de la app. Puedes cambiarlo en Ajustes › Privacidad y seguridad › Análisis y mejoras. Quien prueba More con TestFlight también puede enviar comentarios y capturas a través de TestFlight.</p>
+
+<h2>Exportaciones y contenido compartido</h2>
+<p>Los archivos que exportas (CSV, PDF, copia de seguridad) y las imágenes que compartes (como el recibo del mes o el resumen del año) se crean en el dispositivo y van solo adonde tú decides.</p>
+
+<h2>Menores</h2>
+<p>More no está dirigida a menores de 14 años y no recopila conscientemente datos de nadie, menor o adulto.</p>
+
+<h2>Tus derechos</h2>
+<p>Los datos de la app están bajo tu control: puedes modificarlos, exportarlos (Ajustes › Datos y copia de seguridad) y eliminarlos en cualquier momento, sin pedírselo a nadie.</p>
+<p>Para los datos de una conversación con el soporte puedes solicitar acceso, rectificación, supresión o limitación, u oponerte al tratamiento, escribiendo a <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>. También tienes derecho a presentar una reclamación ante la autoridad italiana de protección de datos (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>) o la autoridad de tu país.</p>
+
+<h2>Eliminar tus datos</h2>
+<p>Puedes eliminar cualquier elemento desde la app. Al desinstalar More se borran los datos guardados en el dispositivo. Los datos de tu iCloud privado se eliminan en Ajustes › tu nombre › iCloud › Gestionar almacenamiento › More.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia, actualizaremos la fecha de arriba y, si los cambios son importantes, te avisaremos en la app.</p>
+</section>
+
+<hr>
+
+<section id="fr" lang="fr">
+<h1>Politique de confidentialité</h1>
+<p class="updated">More — Dernière mise à jour: 13 octobre 2026</p>
+
+<p class="lead">More est conçue pour ne pas collecter vos données : pas de compte, pas de serveur du développeur, ni publicité ni pistage. Cette page explique ce que deviennent les informations que vous saisissez et les rares cas où quelque chose quitte votre iPhone.</p>
+
+<h2>Qui est responsable</h2>
+<p>More est développée par Matteo Morellini, développeur indépendant établi en Italie, responsable du traitement des quelques données décrites ci-dessous. Pour toute question : <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>.</p>
+
+<h2>Où vivent vos données</h2>
+<p>Abonnements, factures, documents, montants, notes, catégories et réglages sont enregistrés <strong>sur votre appareil</strong>. Une partie est partagée, toujours sur l'appareil, avec les widgets et l'extension de partage de More.</p>
+<p>Si vous activez la synchronisation iCloud, ces mêmes données sont copiées dans <strong>votre base de données iCloud privée</strong> afin d'être disponibles sur tous vos appareils. Cette base appartient à votre compte Apple et elle est gérée par Apple selon sa propre politique : le développeur de More n'y a aucun accès. Vous pouvez désactiver la synchronisation à tout moment.</p>
+
+<h2>Ce que nous ne faisons pas</h2>
+<ul>
+  <li>Aucun compte, aucune inscription, aucune adresse e-mail demandée.</li>
+  <li>Aucun outil d'analyse, de télémétrie ou de statistiques d'utilisation.</li>
+  <li>Aucune publicité, aucun pistage, aucun identifiant publicitaire.</li>
+  <li>Aucun SDK ni service tiers intégré à l'app.</li>
+  <li>Vos données ne sont jamais vendues, cédées ni partagées avec qui que ce soit.</li>
+</ul>
+
+<h2>Textes, captures et documents</h2>
+<p>Quand vous importez depuis un texte, une capture d'écran ou un document numérisé, la lecture se fait <strong>entièrement sur l'appareil</strong> : le texte est reconnu avec les fonctions système d'iOS et, si disponible, interprété par le modèle Apple Intelligence qui tourne sur l'iPhone. Images et textes ne sont envoyés à aucun serveur, ni au développeur ni à personne d'autre.</p>
+<p>Le contenu que vous partagez avec More depuis une autre app reste sur l'appareil jusqu'à ce que vous l'importiez ou le supprimiez.</p>
+
+<h2>Connexions à internet</h2>
+<p>Si vous utilisez plusieurs devises, More télécharge les taux de change de référence de la Banque centrale européenne depuis le service public <a href="https://frankfurter.app">frankfurter.app</a>. La requête ne contient <strong>que les codes des devises</strong> (par exemple EUR et USD) : aucun montant, aucun nom d'abonnement, aucun identifiant. Comme toute requête sur internet, le service reçoit l'adresse IP de l'appareil. Si vous utilisez une seule devise, More n'effectue aucune connexion réseau.</p>
+<p>Les liens que vous ouvrez depuis l'app (par exemple la page de résiliation d'un service ou l'App Store) s'ouvrent dans le navigateur ou l'app concernée, où s'appliquent les règles de ces sites.</p>
+
+<h2>Notifications, widgets, Siri et activités en direct</h2>
+<p>Rappels, résumés, widgets et activités en direct sont générés <strong>par votre iPhone</strong>, sans serveur intermédiaire. Si vous utilisez Siri ou Raccourcis, la requête vocale est traitée par Apple selon ses règles de confidentialité.</p>
+
+<h2>Autorisations</h2>
+<ul>
+  <li><strong>Notifications</strong> : pour les rappels. Ce sont des notifications locales.</li>
+  <li><strong>Appareil photo</strong> : seulement si vous utilisez le scanner de documents. L'image est lue sur l'appareil et n'est ni enregistrée ni envoyée.</li>
+  <li><strong>Photos</strong> : More ne voit que les images que vous choisissez, quand vous importez depuis une capture ou personnalisez l'icône d'un abonnement.</li>
+</ul>
+<p>Chaque autorisation est facultative : si vous la refusez, l'app continue de fonctionner sans la fonction correspondante.</p>
+
+<h2>Achats</h2>
+<p>Les achats de More Pro sont gérés par Apple via l'App Store. More reçoit seulement d'Apple la confirmation du forfait actif : elle ne voit jamais votre nom, votre e-mail ni les données de votre carte. Le développeur reçoit uniquement d'Apple des rapports de ventes agrégés.</p>
+
+<h2>Si vous nous écrivez</h2>
+<p>Si vous contactez l'assistance par e-mail, nous recevons votre adresse e-mail et ce que vous écrivez. Le message préparé par More contient en bas quelques informations techniques (version de l'app, version d'iOS, modèle de l'appareil, forfait et langue) : vous les voyez avant l'envoi et pouvez les supprimer.</p>
+<p>Nous utilisons ces données <strong>uniquement pour vous répondre</strong> (base juridique : votre demande et notre intérêt légitime à vous aider). Le courrier est géré avec Gmail : Google le traite donc en tant que fournisseur du service de messagerie. Nous conservons les échanges le temps nécessaire à l'assistance, et au maximum 24 mois.</p>
+
+<h2>Rapports de plantage</h2>
+<p>Si, dans les réglages d'iOS, vous avez choisi de partager les données d'analyse avec les développeurs, Apple peut envoyer au développeur des rapports de plantage anonymes. Vous pouvez modifier ce choix dans Réglages › Confidentialité et sécurité › Analyse et améliorations. Les personnes qui testent More avec TestFlight peuvent aussi envoyer des commentaires et des captures via TestFlight.</p>
+
+<h2>Exports et partages</h2>
+<p>Les fichiers que vous exportez (CSV, PDF, sauvegarde) et les images que vous partagez (comme le ticket du mois ou le bilan de l'année) sont créés sur l'appareil et ne vont que là où vous le décidez.</p>
+
+<h2>Mineurs</h2>
+<p>More ne s'adresse pas aux enfants de moins de 14 ans et ne collecte sciemment les données de personne, mineur ou adulte.</p>
+
+<h2>Vos droits</h2>
+<p>Les données de l'app restent sous votre contrôle : vous pouvez les modifier, les exporter (Réglages › Données et sauvegarde) et les supprimer à tout moment, sans rien demander à personne.</p>
+<p>Pour les données d'un échange avec l'assistance, vous pouvez demander l'accès, la rectification, l'effacement ou la limitation, ou vous opposer au traitement, en écrivant à <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>. Vous avez aussi le droit d'introduire une réclamation auprès de l'autorité italienne de protection des données (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>) ou de l'autorité de votre pays, comme la CNIL en France.</p>
+
+<h2>Supprimer vos données</h2>
+<p>Vous pouvez supprimer n'importe quel élément depuis l'app. Désinstaller More efface les données enregistrées sur l'appareil. Les données de votre iCloud privé se suppriment dans Réglages › votre nom › iCloud › Gérer le stockage › More.</p>
+
+<h2>Modifications</h2>
+<p>Si cette politique change, nous mettrons à jour la date ci-dessus et, pour les changements importants, nous vous en informerons dans l'app.</p>
+</section>
 
 </body>
 </html>

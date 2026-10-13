@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Generato da Scripts/legal/generate.py: modificare Scripts/legal/content.json. -->
 <html lang="it">
 <head>
 <meta charset="utf-8">
@@ -8,24 +9,64 @@
   :root { color-scheme: light dark; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65; max-width: 620px; margin: 0 auto; padding: 60px 24px;
+    line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 40px 24px 80px;
     color: #1c1c1e; background: #fff;
   }
   @media (prefers-color-scheme: dark) { body { color: #f2f2f7; background: #1c1c1e; } }
-  h1 { font-size: 2.2rem; margin-bottom: .2em; }
-  p.lead { font-size: 1.15rem; color: #636366; margin-top: 0; }
-  @media (prefers-color-scheme: dark) { p.lead { color: #aeaeb2; } }
-  ul { list-style: none; padding: 0; margin-top: 2.5em; }
-  li { margin-bottom: .9em; }
-  a { color: #c0552d; font-size: 1.05rem; }
+  nav { font-size: .95rem; margin-bottom: 2.5em; }
+  nav p { margin: 0 0 .4em; display: flex; flex-wrap: wrap; gap: .3em 1.1em; }
+  .lead a, p a { overflow-wrap: anywhere; }
+  h1 { font-size: 2rem; margin-bottom: .25em; }
+  h2 { font-size: 1.2rem; margin-top: 2.2em; }
+  .updated { color: #8e8e93; font-size: .95rem; margin-top: 0; }
+  .lead { font-size: 1.1rem; }
+  ul { padding-left: 1.25em; }
+  li { margin-bottom: .4em; }
+  hr { border: none; border-top: 1px solid rgba(127,127,127,.3); margin: 4em 0; }
+  a { color: #c0552d; }
 </style>
 </head>
 <body>
-  <h1>More</h1>
-  <p class="lead">Abbonamenti, bollette e scadenze dei documenti, in un posto solo.</p>
-  <ul>
-    <li><a href="support.html">Supporto e domande frequenti</a></li>
-    <li><a href="privacy-policy.html">Informativa sulla privacy</a></li>
-  </ul>
+
+<nav><p><a href="#it">Italiano</a> <a href="#en">English</a> <a href="#es">Español</a> <a href="#fr">Français</a></p></nav>
+
+<h1>More</h1>
+
+<section id="it" lang="it">
+<p class="lead">Abbonamenti, bollette e scadenze dei documenti, in un posto solo. Un'app per iPhone di Matteo Morellini.</p>
+<ul>
+  <li><a href="privacy-policy.html#it">Informativa sulla privacy</a></li>
+  <li><a href="terms.html#it">Termini di utilizzo</a></li>
+  <li><a href="support.html#it">Supporto</a></li>
+</ul>
+</section>
+
+<section id="en" lang="en">
+<p class="lead">Subscriptions, bills and document deadlines, in one place. An iPhone app by Matteo Morellini.</p>
+<ul>
+  <li><a href="privacy-policy.html#en">Privacy Policy</a></li>
+  <li><a href="terms.html#en">Terms of Use</a></li>
+  <li><a href="support.html#en">Support</a></li>
+</ul>
+</section>
+
+<section id="es" lang="es">
+<p class="lead">Suscripciones, facturas y vencimientos de documentos, en un solo lugar. Una app para iPhone de Matteo Morellini.</p>
+<ul>
+  <li><a href="privacy-policy.html#es">Política de privacidad</a></li>
+  <li><a href="terms.html#es">Términos de uso</a></li>
+  <li><a href="support.html#es">Soporte</a></li>
+</ul>
+</section>
+
+<section id="fr" lang="fr">
+<p class="lead">Abonnements, factures et échéances de documents, au même endroit. Une app pour iPhone de Matteo Morellini.</p>
+<ul>
+  <li><a href="privacy-policy.html#fr">Politique de confidentialité</a></li>
+  <li><a href="terms.html#fr">Conditions d&#x27;utilisation</a></li>
+  <li><a href="support.html#fr">Assistance</a></li>
+</ul>
+</section>
+
 </body>
 </html>
