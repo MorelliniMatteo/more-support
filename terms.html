@@ -12,28 +12,34 @@
     line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 40px 24px 80px;
     color: #1c1c1e; background: #fff;
   }
-  @media (prefers-color-scheme: dark) { body { color: #f2f2f7; background: #1c1c1e; } }
   nav { font-size: .95rem; margin-bottom: 2.5em; }
   nav p { margin: 0 0 .4em; display: flex; flex-wrap: wrap; gap: .3em 1.1em; }
   .lead a, p a { overflow-wrap: anywhere; }
   h1 { font-size: 2rem; margin-bottom: .25em; }
   h2 { font-size: 1.2rem; margin-top: 2.2em; }
-  .updated { color: #8e8e93; font-size: .95rem; margin-top: 0; }
+  /* Contrasti WCAG AA (≥ 4,5:1) in chiaro e in scuro: link 5,5 / 6,8, data 5,2 / 7,7. */
+  .updated { color: #6c6c70; font-size: .95rem; margin-top: 0; }
   .lead { font-size: 1.1rem; }
   ul { padding-left: 1.25em; }
   li { margin-bottom: .4em; }
   hr { border: none; border-top: 1px solid rgba(127,127,127,.3); margin: 4em 0; }
-  a { color: #c0552d; }
+  a { color: #b04a24; text-decoration-thickness: .08em; text-underline-offset: .15em; }
+  a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; border-radius: 2px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #1c1c1e; }
+    a { color: #ec8a62; }
+    .updated { color: #aeaeb2; }
+  }
 </style>
 </head>
 <body>
 
-<nav><p><a href="index.html"><strong>More</strong></a> <a href="privacy-policy.html">Informativa sulla privacy</a> <a href="support.html">Supporto</a></p>
+<nav aria-label="More"><p><a href="index.html"><strong>More</strong></a> <a href="privacy-policy.html">Informativa sulla privacy</a> <a href="support.html">Supporto</a></p>
 <p><a href="#it">Italiano</a> <a href="#en">English</a> <a href="#es">Español</a> <a href="#fr">Français</a></p></nav>
 
 <section id="it" lang="it">
 <h1>Termini di utilizzo</h1>
-<p class="updated">More — Ultimo aggiornamento: 13 ottobre 2026</p>
+<p class="updated">More — Ultimo aggiornamento: 15 ottobre 2026</p>
 
 <p class="lead">Questi termini regolano l'uso di More. Usando l'app li accetti. La licenza d'uso e gli acquisti sono regolati anche dal Contratto di licenza standard di Apple per le app (EULA), disponibile su <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/internet-services/itunes/dev/stdeula</a>: questi termini lo completano con ciò che è specifico di More.</p>
 
@@ -60,7 +66,7 @@
 <p>More si può usare gratuitamente, con alcuni limiti. More Pro sbloccherà al lancio le funzioni indicate nella schermata di acquisto. Durante TestFlight l’accesso completo è temporaneo e gratuito: non costituisce un acquisto né dà diritto a Pro permanente.</p>
 <p>More Pro sarà disponibile con un acquisto unico, senza abbonamento e senza rinnovi automatici. Il prezzo localizzato e il pagamento tramite Apple Account saranno mostrati prima della conferma.</p>
 <ul>
-  <li>L’acquisto dà accesso a More Pro per sempre e include tutte le future funzioni Pro e tutti gli aggiornamenti dell’app, senza ulteriori acquisti. È legato al tuo Apple Account.</li>
+  <li>L’acquisto non scade e non si rinnova: include le future funzioni Pro e gli aggiornamenti dell’app finché More è disponibile sull’App Store, senza ulteriori acquisti. È legato al tuo Apple Account e, se lo attivi, si condivide con il tuo gruppo In famiglia.</li>
   <li>Il ripristino dei tuoi dati da backup rimane completo anche nel piano gratuito.</li>
   <li>Rimborsi e diritto di recesso sono gestiti da Apple secondo le sue condizioni (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>). Con «Ripristina acquisti» recuperi un acquisto su un nuovo dispositivo.</li>
 </ul>
@@ -91,7 +97,7 @@
 
 <section id="en" lang="en">
 <h1>Terms of Use</h1>
-<p class="updated">More — Last updated: October 13, 2026</p>
+<p class="updated">More — Last updated: October 15, 2026</p>
 
 <p class="lead">These terms govern your use of More. By using the app you accept them. The licence and purchases are also governed by Apple's Standard Licensed Application End User License Agreement (EULA), available at <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/internet-services/itunes/dev/stdeula</a>: these terms add what is specific to More.</p>
 
@@ -118,7 +124,7 @@
 <p>More can be used for free, with some limits. At launch, More Pro will unlock the features listed on the purchase screen. Full access during TestFlight is temporary and free: it is not a purchase and does not grant permanent Pro access.</p>
 <p>More Pro will be available as a one-time purchase, without a subscription or automatic renewals. The localized price and Apple Account payment will be shown before confirmation.</p>
 <ul>
-  <li>The purchase gives you More Pro forever and includes all future Pro features and app updates, with no further purchases. It is tied to your Apple Account.</li>
+  <li>The purchase doesn't expire or renew: it includes future Pro features and app updates for as long as More is available on the App Store, with no further purchases. It is tied to your Apple Account and, if you turn it on, shared with your Family Sharing group.</li>
   <li>Restoring your data from a backup remains complete on the free plan.</li>
   <li>Refunds and the right of withdrawal are handled by Apple under its terms (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>). Restore purchases recovers a purchase on a new device.</li>
 </ul>
@@ -149,7 +155,7 @@
 
 <section id="es" lang="es">
 <h1>Términos de uso</h1>
-<p class="updated">More — Última actualización: 13 de octubre de 2026</p>
+<p class="updated">More — Última actualización: 15 de octubre de 2026</p>
 
 <p class="lead">Estos términos regulan el uso de More. Al usar la app los aceptas. La licencia de uso y las compras se rigen también por el Contrato de licencia estándar de Apple para apps (EULA), disponible en <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/internet-services/itunes/dev/stdeula</a>: estos términos lo completan con lo que es específico de More.</p>
 
@@ -176,7 +182,7 @@
 <p>More se puede usar gratis, con algunos límites. En el lanzamiento, More Pro desbloqueará las funciones indicadas en la pantalla de compra. El acceso completo durante TestFlight es temporal y gratuito: no es una compra ni otorga acceso permanente a Pro.</p>
 <p>More Pro estará disponible con una compra única, sin suscripción ni renovaciones automáticas. El precio local y el pago mediante tu cuenta de Apple se mostrarán antes de confirmar.</p>
 <ul>
-  <li>La compra te da acceso a More Pro para siempre e incluye todas las futuras funciones Pro y actualizaciones de la app, sin nuevas compras. Está vinculada a tu cuenta de Apple.</li>
+  <li>La compra no caduca ni se renueva: incluye las futuras funciones Pro y las actualizaciones de la app mientras More esté disponible en el App Store, sin nuevas compras. Está vinculada a tu cuenta de Apple y, si lo activas, se comparte con tu grupo de En familia.</li>
   <li>La restauración de tus datos desde una copia de seguridad sigue siendo completa en el plan gratuito.</li>
   <li>Los reembolsos y el derecho de desistimiento los gestiona Apple según sus condiciones (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>). Restaurar compras recupera una compra en un dispositivo nuevo.</li>
 </ul>
@@ -207,7 +213,7 @@
 
 <section id="fr" lang="fr">
 <h1>Conditions d&#x27;utilisation</h1>
-<p class="updated">More — Dernière mise à jour: 13 octobre 2026</p>
+<p class="updated">More — Dernière mise à jour: 15 octobre 2026</p>
 
 <p class="lead">Ces conditions régissent l'utilisation de More. En utilisant l'app, vous les acceptez. La licence et les achats sont aussi régis par le Contrat de licence standard d'Apple pour les apps (EULA), disponible sur <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/internet-services/itunes/dev/stdeula</a> : ces conditions le complètent avec ce qui est propre à More.</p>
 
@@ -234,7 +240,7 @@
 <p>More peut être utilisé gratuitement, avec certaines limites. Au lancement, More Pro débloquera les fonctions indiquées sur l’écran d’achat. L’accès complet pendant TestFlight est temporaire et gratuit : ce n’est pas un achat et il ne donne pas droit à un accès Pro permanent.</p>
 <p>More Pro sera disponible par achat unique, sans abonnement ni renouvellement automatique. Le prix local et le paiement via votre compte Apple seront affichés avant confirmation.</p>
 <ul>
-  <li>L’achat vous donne accès à More Pro pour toujours et inclut toutes les futures fonctions Pro et mises à jour de l’app, sans nouvel achat. Il est lié à votre compte Apple.</li>
+  <li>L’achat n’expire pas et ne se renouvelle pas : il inclut les futures fonctions Pro et les mises à jour de l’app tant que More est disponible sur l’App Store, sans nouvel achat. Il est lié à votre compte Apple et, si vous l’activez, partagé avec votre groupe de partage familial.</li>
   <li>La restauration de vos données depuis une sauvegarde reste complète avec le forfait gratuit.</li>
   <li>Les remboursements et le droit de rétractation sont gérés par Apple selon ses conditions (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>). Restaurer les achats récupère un achat sur un nouvel appareil.</li>
 </ul>

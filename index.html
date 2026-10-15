@@ -12,23 +12,29 @@
     line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 40px 24px 80px;
     color: #1c1c1e; background: #fff;
   }
-  @media (prefers-color-scheme: dark) { body { color: #f2f2f7; background: #1c1c1e; } }
   nav { font-size: .95rem; margin-bottom: 2.5em; }
   nav p { margin: 0 0 .4em; display: flex; flex-wrap: wrap; gap: .3em 1.1em; }
   .lead a, p a { overflow-wrap: anywhere; }
   h1 { font-size: 2rem; margin-bottom: .25em; }
   h2 { font-size: 1.2rem; margin-top: 2.2em; }
-  .updated { color: #8e8e93; font-size: .95rem; margin-top: 0; }
+  /* Contrasti WCAG AA (≥ 4,5:1) in chiaro e in scuro: link 5,5 / 6,8, data 5,2 / 7,7. */
+  .updated { color: #6c6c70; font-size: .95rem; margin-top: 0; }
   .lead { font-size: 1.1rem; }
   ul { padding-left: 1.25em; }
   li { margin-bottom: .4em; }
   hr { border: none; border-top: 1px solid rgba(127,127,127,.3); margin: 4em 0; }
-  a { color: #c0552d; }
+  a { color: #b04a24; text-decoration-thickness: .08em; text-underline-offset: .15em; }
+  a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; border-radius: 2px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #1c1c1e; }
+    a { color: #ec8a62; }
+    .updated { color: #aeaeb2; }
+  }
 </style>
 </head>
 <body>
 
-<nav><p><a href="#it">Italiano</a> <a href="#en">English</a> <a href="#es">Español</a> <a href="#fr">Français</a></p></nav>
+<nav aria-label="More"><p><a href="#it">Italiano</a> <a href="#en">English</a> <a href="#es">Español</a> <a href="#fr">Français</a></p></nav>
 
 <h1>More</h1>
 

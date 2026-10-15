@@ -12,23 +12,29 @@
     line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 40px 24px 80px;
     color: #1c1c1e; background: #fff;
   }
-  @media (prefers-color-scheme: dark) { body { color: #f2f2f7; background: #1c1c1e; } }
   nav { font-size: .95rem; margin-bottom: 2.5em; }
   nav p { margin: 0 0 .4em; display: flex; flex-wrap: wrap; gap: .3em 1.1em; }
   .lead a, p a { overflow-wrap: anywhere; }
   h1 { font-size: 2rem; margin-bottom: .25em; }
   h2 { font-size: 1.2rem; margin-top: 2.2em; }
-  .updated { color: #8e8e93; font-size: .95rem; margin-top: 0; }
+  /* Contrasti WCAG AA (≥ 4,5:1) in chiaro e in scuro: link 5,5 / 6,8, data 5,2 / 7,7. */
+  .updated { color: #6c6c70; font-size: .95rem; margin-top: 0; }
   .lead { font-size: 1.1rem; }
   ul { padding-left: 1.25em; }
   li { margin-bottom: .4em; }
   hr { border: none; border-top: 1px solid rgba(127,127,127,.3); margin: 4em 0; }
-  a { color: #c0552d; }
+  a { color: #b04a24; text-decoration-thickness: .08em; text-underline-offset: .15em; }
+  a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; border-radius: 2px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #1c1c1e; }
+    a { color: #ec8a62; }
+    .updated { color: #aeaeb2; }
+  }
 </style>
 </head>
 <body>
 
-<nav><p><a href="index.html"><strong>More</strong></a> <a href="privacy-policy.html">Informativa sulla privacy</a> <a href="terms.html">Termini di utilizzo</a></p>
+<nav aria-label="More"><p><a href="index.html"><strong>More</strong></a> <a href="privacy-policy.html">Informativa sulla privacy</a> <a href="terms.html">Termini di utilizzo</a></p>
 <p><a href="#it">Italiano</a> <a href="#en">English</a> <a href="#es">Español</a> <a href="#fr">Français</a></p></nav>
 
 <section id="it" lang="it">
@@ -36,7 +42,7 @@
 <p class="lead">Serve aiuto o hai trovato un problema? Scrivi a <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>: rispondo appena posso. Dall'app puoi scrivere da Impostazioni › Supporto: il messaggio include già versione dell'app, versione di iOS e modello dell'iPhone, che aiutano molto a capire cosa succede.</p>
 
 <h2>I miei dati finiscono da qualche parte?</h2>
-<p>No. Restano sul tuo iPhone. Se attivi la sincronizzazione iCloud vanno nel tuo spazio iCloud privato, a cui lo sviluppatore non ha accesso. Nessun account, nessun tracciamento, nessuna pubblicità. I dettagli sono nell'informativa sulla privacy.</p>
+<p>No. Restano sul tuo iPhone e, con More Pro, nel tuo spazio iCloud privato, a cui lo sviluppatore non ha accesso. Nessun account, nessun tracciamento, nessuna pubblicità. Le uniche richieste a internet sono i tassi di cambio, che contengono solo i codici delle valute: i dettagli sono nell'informativa sulla privacy.</p>
 
 <h2>Non ricevo i promemoria.</h2>
 <p>Controlla che le notifiche siano attive sia in More (Impostazioni › Promemoria) sia in Impostazioni di iOS › Notifiche › More, e che una modalità Full immersion non le stia silenziando. I promemoria arrivano alle 9:00 ora locale.</p>
@@ -54,6 +60,9 @@
 
 <h2>Come recupero i miei dati se cambio iPhone?</h2>
 <p>Con More Pro e la sincronizzazione iCloud attiva, i dati tornano da soli sul nuovo dispositivo. In ogni piano puoi esportare un backup completo da Impostazioni › Dati e backup e ripristinarlo sull'altro iPhone: il ripristino recupera tutti i tuoi dati anche nel piano gratuito.</p>
+
+<h2>Come cancello tutti i miei dati?</h2>
+<p>Da Impostazioni › Dati e backup › Elimina tutti i dati. Vengono cancellati abbonamenti, bollette, documenti, categorie, metodi di pagamento, temi personalizzati e storico, anche dal tuo iCloud se la sincronizzazione è attiva. Se pensi di averne ancora bisogno, esporta prima un backup.</p>
 
 <h2>Che cos&#x27;è More Pro?</h2>
 <p>Un acquisto unico, senza abbonamento e senza rinnovi: toglie i limiti del piano gratuito e aggiunge statistiche e proiezioni, import illimitati, sincronizzazione iCloud, widget, temi e icone, report PDF e altro. Il prezzo è sempre mostrato prima della conferma.</p>
@@ -73,7 +82,7 @@
 <p class="lead">Need help or found a problem? Write to <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong> and I'll reply as soon as I can. From the app you can write from Settings › Support: the message already includes the app version, the iOS version and the iPhone model, which help a lot.</p>
 
 <h2>Does my data go anywhere?</h2>
-<p>No. It stays on your iPhone. If you turn on iCloud sync it goes to your own private iCloud space, which the developer cannot access. No account, no tracking, no ads. The details are in the privacy policy.</p>
+<p>No. It stays on your iPhone and, with More Pro, in your private iCloud space, which the developer can't access. No account, no tracking, no ads. The only internet requests are exchange rates, which contain nothing but currency codes: the details are in the privacy policy.</p>
 
 <h2>I&#x27;m not getting reminders.</h2>
 <p>Check that notifications are on both in More (Settings › Reminders) and in iOS Settings › Notifications › More, and that no Focus mode is silencing them. Reminders arrive at 9:00 local time.</p>
@@ -91,6 +100,9 @@
 
 <h2>How do I get my data back on a new iPhone?</h2>
 <p>With More Pro and iCloud sync on, your data comes back on its own. On any plan you can export a full backup from Settings › Data and backup and restore it on the other iPhone: restoring brings back all your data on the free plan too.</p>
+
+<h2>How do I delete all my data?</h2>
+<p>Go to Settings › Data and backup › Delete all data. It deletes subscriptions, bills, documents, categories, payment methods, custom themes and history, from your iCloud too if sync is on. If you might need them again, export a backup first.</p>
 
 <h2>What is More Pro?</h2>
 <p>A one-time purchase, with no subscription and no renewals: it removes the free plan's limits and adds statistics and projections, unlimited imports, iCloud sync, widgets, themes and icons, PDF reports and more. The price is always shown before you confirm.</p>
@@ -110,7 +122,7 @@
 <p class="lead">¿Necesitas ayuda o has encontrado un problema? Escribe a <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong> y te respondo en cuanto pueda. Dentro de la app puedes escribir desde Ajustes › Soporte: el mensaje ya incluye la versión de la app, la de iOS y el modelo del iPhone, que ayudan mucho a entender qué está pasando.</p>
 
 <h2>¿Mis datos acaban en algún sitio?</h2>
-<p>No. Se quedan en tu iPhone. Si activas la sincronización con iCloud, van a tu espacio privado de iCloud, al que el desarrollador no tiene acceso. Sin cuenta, sin seguimiento y sin publicidad. Los detalles están en la política de privacidad.</p>
+<p>No. Se quedan en tu iPhone y, con More Pro, en tu espacio privado de iCloud, al que el desarrollador no tiene acceso. Sin cuenta, sin seguimiento, sin publicidad. Las únicas solicitudes a internet son los tipos de cambio, que solo contienen los códigos de las monedas: los detalles están en la política de privacidad.</p>
 
 <h2>No me llegan los recordatorios.</h2>
 <p>Comprueba que las notificaciones estén activadas tanto en More (Ajustes › Recordatorios) como en Ajustes de iOS › Notificaciones › More, y que ningún modo de concentración las esté silenciando. Los recordatorios llegan a las 9:00, hora local.</p>
@@ -128,6 +140,9 @@
 
 <h2>¿Cómo recupero mis datos si cambio de iPhone?</h2>
 <p>Con More Pro y la sincronización con iCloud activada, tus datos vuelven solos al nuevo dispositivo. En cualquier plan puedes exportar una copia de seguridad completa desde Ajustes › Datos y copia de seguridad y restaurarla en el otro iPhone: la restauración recupera todos tus datos, también en el plan gratuito.</p>
+
+<h2>¿Cómo borro todos mis datos?</h2>
+<p>En Ajustes › Datos y copia de seguridad › Eliminar todos los datos. Se borran suscripciones, facturas, documentos, categorías, métodos de pago, temas personalizados e historial, también de tu iCloud si la sincronización está activada. Si crees que aún los necesitarás, exporta antes una copia de seguridad.</p>
 
 <h2>¿Qué es More Pro?</h2>
 <p>Es una compra única, sin suscripción y sin renovaciones: quita los límites del plan gratuito y añade estadísticas y proyecciones, importaciones ilimitadas, sincronización con iCloud, widgets, temas e iconos, informes en PDF y mucho más. El precio siempre se muestra antes de confirmar.</p>
@@ -147,7 +162,7 @@
 <p class="lead">Vous avez besoin d’aide ou rencontré un problème ? Écrivez-moi à <strong><a href="mailto:more.support.more@gmail.com">more.support.more@gmail.com</a></strong>, je réponds dès que possible. Depuis l’app, vous pouvez écrire via Réglages › Assistance : le message contient déjà la version de l’app, celle d’iOS et le modèle de l’iPhone, ce qui aide beaucoup à comprendre ce qui se passe.</p>
 
 <h2>Mes données sont-elles envoyées quelque part ?</h2>
-<p>Non. Elles restent sur votre iPhone. Si vous activez la synchronisation iCloud, elles vont dans votre espace iCloud privé, auquel le développeur n’a pas accès. Pas de compte, pas de suivi, pas de publicité. Les détails figurent dans la politique de confidentialité.</p>
+<p>Non. Elles restent sur votre iPhone et, avec More Pro, dans votre espace iCloud privé, auquel le développeur n'a pas accès. Aucun compte, aucun pistage, aucune publicité. Les seules requêtes sur internet concernent les taux de change et ne contiennent que les codes des devises : les détails figurent dans la politique de confidentialité.</p>
 
 <h2>Je ne reçois pas les rappels.</h2>
 <p>Vérifiez que les notifications sont activées à la fois dans More (Réglages › Rappels) et dans Réglages d’iOS › Notifications › More, et qu’aucun mode de concentration ne les met en sourdine. Les rappels arrivent à 9 h, heure locale.</p>
@@ -165,6 +180,9 @@
 
 <h2>Comment récupérer mes données sur un nouvel iPhone ?</h2>
 <p>Avec More Pro et la synchronisation iCloud activée, vos données reviennent automatiquement sur le nouvel appareil. Quelle que soit la formule, vous pouvez exporter une sauvegarde complète depuis Réglages › Données et sauvegarde, puis la restaurer sur l’autre iPhone : la restauration récupère toutes vos données, y compris avec la formule gratuite.</p>
+
+<h2>Comment supprimer toutes mes données ?</h2>
+<p>Dans Réglages › Données et sauvegarde › Supprimer toutes les données. Cela supprime abonnements, factures, documents, catégories, moyens de paiement, thèmes personnalisés et historique, y compris dans votre iCloud si la synchronisation est activée. Si vous pensez en avoir encore besoin, exportez d'abord une sauvegarde.</p>
 
 <h2>Qu’est-ce que More Pro ?</h2>
 <p>C’est un achat unique, sans abonnement ni renouvellement : il supprime les limites de la formule gratuite et ajoute statistiques et projections, imports illimités, synchronisation iCloud, widgets, thèmes et icônes, rapports PDF, et plus encore. Le prix est toujours affiché avant confirmation.</p>
